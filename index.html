@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phone hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+       <section>
+        <div class="bg-slate-200 m-7 p-7  rounded-xl">
+            <input id="serch-input" type="text"  placeholder="chose your phone...." class="w-60 h-11 p-3 border-none outline-none text-white">
+            <button onclick="serchBtn()"  class="btn btn-primary">serch</button>
+        </div>
+        <div id="loder" class="text-center hidden">
+            <span class="loading loading-spinner text-success w-10" ></span>
+        </div>
+        <div id="card-container" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-7">   
+        </div>
+       </section>
+    </main>
+    <footer></footer>
+
+    <script src="seript/phone.js"></script>
+</body>
+</html>
